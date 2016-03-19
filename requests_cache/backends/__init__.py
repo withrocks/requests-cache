@@ -7,35 +7,39 @@
     Classes and functions for cache persistence
 """
 
-
 from .base import BaseCache
+
+BACKEND_SQLITE = 'sqlite'
+BACKEND_MEMORY = 'memory'
+BACKEND_MONGO = 'mongo'
+BACKEND_REDIS = 'redis'
 
 registry = {
     'memory': BaseCache,
 }
 
 _backend_dependencies = {
-    'sqlite': 'sqlite3',
-    'mongo': 'pymongo',
-    'redis': 'redis'
+    BACKEND_SQLITE: 'sqlite3',
+    BACKEND_MONGO: 'pymongo',
+    BACKEND_REDIS: 'redis'
 }
 
 try:
     # Heroku doesn't allow the SQLite3 module to be installed
     from .sqlite import DbCache
-    registry['sqlite'] = DbCache
+    registry[BACKEND_SQLITE] = DbCache
 except ImportError:
     DbCache = None
 
 try:
     from .mongo import MongoCache
-    registry['mongo'] = registry['mongodb'] = MongoCache
+    registry[BACKEND_MONGO] = registry['mongodb'] = MongoCache
 except ImportError:
     MongoCache = None
 
 try:
     from .redis import RedisCache
-    registry['redis'] = RedisCache
+    registry[BACKEND_REDIS] = RedisCache
 except ImportError:
     RedisCache = None
 
@@ -58,6 +62,7 @@ def create_backend(backend_name, cache_name, options):
 
 
 def _get_default_backend_name():
-    if 'sqlite' in registry:
-        return 'sqlite'
-    return 'memory'
+    if BACKEND_SQLITE in registry:
+        return BACKEND_SQLITE
+    return BACKEND_MEMORY
+
