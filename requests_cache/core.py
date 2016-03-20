@@ -15,7 +15,8 @@ from requests import Session as OriginalSession
 from requests.hooks import dispatch_hook
 
 from requests_cache import backends
-from requests_cache.compat import basestring
+import logging
+logger = logging.getLogger(__name__)
 
 try:
     ver = tuple(map(int, requests.__version__.split(".")))
@@ -86,6 +87,9 @@ class CachedSession(OriginalSession):
             return response
 
         cache_key = self.cache.create_key(request)
+
+        if logger.isEnabledFor(logging.DEBUG):
+            logger.debug("Created cache key {}".format(cache_key))
 
         def send_request_and_cache_response():
             response = super(CachedSession, self).send(request, **kwargs)

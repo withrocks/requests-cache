@@ -8,14 +8,17 @@
 """
 
 from .base import BaseCache
+from .file import FileSystemCache
 
 BACKEND_SQLITE = 'sqlite'
 BACKEND_MEMORY = 'memory'
 BACKEND_MONGO = 'mongo'
 BACKEND_REDIS = 'redis'
+BACKEND_FILE = 'file'
 
 registry = {
     'memory': BaseCache,
+    'file': FileSystemCache
 }
 
 _backend_dependencies = {

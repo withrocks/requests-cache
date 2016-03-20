@@ -1,0 +1,204 @@
+[
+ {
+  "_content": "{\n  \"origin\": \"217.210.239.116\"\n}\n", 
+  "cookies": {
+   "_cookies": {}, 
+   "_cookies_lock": {
+    "_RLock__block": "<type 'thread.lock'> can't be serialized", 
+    "_RLock__count": 0, 
+    "_RLock__owner": null, 
+    "_Verbose__verbose": false
+   }, 
+   "_now": 1458472371, 
+   "_policy": {
+    "_allowed_domains": null, 
+    "_blocked_domains": [], 
+    "_now": 1458472371, 
+    "hide_cookie2": false, 
+    "netscape": true, 
+    "rfc2109_as_netscape": null, 
+    "rfc2965": false, 
+    "strict_domain": false, 
+    "strict_ns_domain": 0, 
+    "strict_ns_set_initial_dollar": false, 
+    "strict_ns_set_path": false, 
+    "strict_ns_unverifiable": false, 
+    "strict_rfc2965_unverifiable": true
+   }
+  }, 
+  "encoding": null, 
+  "headers": {
+   "_store": {
+    "access-control-allow-credentials": [
+     "Access-Control-Allow-Credentials", 
+     "true"
+    ], 
+    "access-control-allow-origin": [
+     "Access-Control-Allow-Origin", 
+     "*"
+    ], 
+    "connection": [
+     "Connection", 
+     "keep-alive"
+    ], 
+    "content-length": [
+     "Content-Length", 
+     "34"
+    ], 
+    "content-type": [
+     "Content-Type", 
+     "application/json"
+    ], 
+    "date": [
+     "Date", 
+     "Sun, 20 Mar 2016 11:12:51 GMT"
+    ], 
+    "server": [
+     "Server", 
+     "nginx"
+    ]
+   }
+  }, 
+  "history": [], 
+  "raw": {
+   "_original_response": {
+    "_method": "GET", 
+    "chunk_left": "UNKNOWN", 
+    "chunked": 0, 
+    "debuglevel": 0, 
+    "fp": null, 
+    "length": 0, 
+    "msg": {
+     "dict": {
+      "access-control-allow-credentials": "true", 
+      "access-control-allow-origin": "*", 
+      "connection": "keep-alive", 
+      "content-length": "34", 
+      "content-type": "application/json", 
+      "date": "Sun, 20 Mar 2016 11:12:51 GMT", 
+      "server": "nginx"
+     }, 
+     "encodingheader": null, 
+     "fp": null, 
+     "headers": [
+      "Server: nginx\r\n", 
+      "Date: Sun, 20 Mar 2016 11:12:51 GMT\r\n", 
+      "Content-Type: application/json\r\n", 
+      "Content-Length: 34\r\n", 
+      "Connection: keep-alive\r\n", 
+      "Access-Control-Allow-Origin: *\r\n", 
+      "Access-Control-Allow-Credentials: true\r\n"
+     ], 
+     "maintype": "application", 
+     "plist": [], 
+     "plisttext": "", 
+     "seekable": 0, 
+     "startofbody": null, 
+     "startofheaders": null, 
+     "status": "", 
+     "subtype": "json", 
+     "type": "application/json", 
+     "typeheader": "application/json", 
+     "unixfrom": ""
+    }, 
+    "reason": "OK", 
+    "status": 200, 
+    "strict": true, 
+    "version": 11, 
+    "will_close": false
+   }, 
+   "decode_content": false, 
+   "headers": {
+    "_container": {
+     "access-control-allow-credentials": [
+      "Access-Control-Allow-Credentials", 
+      "true"
+     ], 
+     "access-control-allow-origin": [
+      "Access-Control-Allow-Origin", 
+      "*"
+     ], 
+     "connection": [
+      "Connection", 
+      "keep-alive"
+     ], 
+     "content-length": [
+      "Content-Length", 
+      "34"
+     ], 
+     "content-type": [
+      "Content-Type", 
+      "application/json"
+     ], 
+     "date": [
+      "Date", 
+      "Sun, 20 Mar 2016 11:12:51 GMT"
+     ], 
+     "server": [
+      "Server", 
+      "nginx"
+     ]
+    }
+   }, 
+   "reason": "OK", 
+   "status": 200, 
+   "strict": true, 
+   "version": 11
+  }, 
+  "reason": "OK", 
+  "request": {
+   "_cookies": {
+    "_cookies": {}, 
+    "_cookies_lock": {
+     "_RLock__block": "<type 'thread.lock'> can't be serialized", 
+     "_RLock__count": 0, 
+     "_RLock__owner": null, 
+     "_Verbose__verbose": false
+    }, 
+    "_now": 1458472371, 
+    "_policy": {
+     "_allowed_domains": null, 
+     "_blocked_domains": [], 
+     "_now": 1458472371, 
+     "hide_cookie2": false, 
+     "netscape": true, 
+     "rfc2109_as_netscape": null, 
+     "rfc2965": false, 
+     "strict_domain": false, 
+     "strict_ns_domain": 0, 
+     "strict_ns_set_initial_dollar": false, 
+     "strict_ns_set_path": false, 
+     "strict_ns_unverifiable": false, 
+     "strict_rfc2965_unverifiable": true
+    }
+   }, 
+   "body": null, 
+   "headers": {
+    "_store": {
+     "accept": [
+      "Accept", 
+      "*/*"
+     ], 
+     "accept-encoding": [
+      "Accept-Encoding", 
+      "gzip, deflate"
+     ], 
+     "connection": [
+      "Connection", 
+      "keep-alive"
+     ], 
+     "user-agent": [
+      "User-Agent", 
+      "python-requests/2.9.1"
+     ]
+    }
+   }, 
+   "hooks": [], 
+   "method": "GET", 
+   "url": "http://httpbin.org/ip"
+  }, 
+  "status_code": 200, 
+  "url": "http://httpbin.org/ip"
+ }, 
+ "<type 'datetime.datetime'> can't be serialized"
+]
